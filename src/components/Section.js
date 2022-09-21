@@ -7,14 +7,20 @@ import "./styles/Section.scss"
 const Section = ({slides}) => {
     const [first,setFirst] = useState(0);
     const length = slides.length;
+    const nextSlide = () => {
+        setFirst(first === length - 1 ? 0 : first + 1 )
+    }
+    const prevSlide = () => {
+        setFirst(first === 0 ?  length - 1 : first - 1 )
+    }
     return (
         <section>
             <div className="slide">
-                <ArrowBack className='back'/>
-                <ArrowForward className='forward'/>
+                <ArrowBack className='back' onClick={prevSlide}/>
+                <ArrowForward className='forward' onClick={nextSlide}/>
                 {Data.map((item,index) => {
                     return (
-                        <div className={item.className}>
+                        <div key={index} className={item.className}>
                             <div className={index === first ? "slides active" : "slides"}>
                                 {index === first && (
                                     <div>
