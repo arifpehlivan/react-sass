@@ -22,7 +22,7 @@ const Hedaer = () => {
                             <Link to="/pricing">Pricing</Link>
                         </li>
                         <li>
-                            <Link to="/signup">Sign Up</Link>
+                            <Link to="/signup">Collections</Link>
                         </li>
                         <li>
                             <Link to="/sponsors">Sponsors</Link>
