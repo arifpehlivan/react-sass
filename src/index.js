@@ -7,6 +7,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Pricing from "./components/Pricing"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<App/>}/>
+        <Route path="/pricing" element={<Pricing/>}/>
       </Routes>
     </Router>
   </React.StrictMode>

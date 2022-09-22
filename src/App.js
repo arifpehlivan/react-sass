@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Section from "./components/Section"
 import {Data} from "./components/Data"
 import Second from './components/Second';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header/>
       <Section slides={Data}/>
       <Second/>
+      <Footer/>
     </div>
   );
 }

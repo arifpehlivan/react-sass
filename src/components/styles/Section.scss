@@ -75,6 +75,13 @@ section {
         background: transparent;
         color: $main-color;
         text-transform: uppercase;
-        margin: 0 2rem;
+        margin: 0 1rem;
+        cursor: pointer;
+        &:hover{
+            background: $main-color;
+            color: $header-color;
+            transform: scale(120%);
+            transition: 1s ease-in;
+        }
     }
 }

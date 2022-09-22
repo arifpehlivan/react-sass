@@ -1,7 +1,7 @@
 @import "./variables/colors";
 
 .second{
-    height: 100vh;
+    height: 1300px;
     background: $header-color;
     align-items: center;
     h1{
@@ -13,9 +13,9 @@
 }
 .images{
     display: grid;
-    grid-template-columns: repeat(2,350px);
+    grid-template-columns: repeat(2,550px);
     align-items: center;
-    gap: 4rem;
+    gap: 5rem;
     justify-content: center;
     padding: 30px;
     img{
@@ -29,6 +29,6 @@
     }
     p {
         color: $main-color;
-        padding-top: 15px;
+        padding-top: 35px;
     }
 }
